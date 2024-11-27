@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="login-container">
+            <div class="login-image">
+                <img src="images/im01.jpg" alt="Login Background">
+            </div>
+            <div class="login-overlay">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                
+                <p>If you don't have an account, <a href="register.html">register here</a>.</p>
+                
+                <button onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulate user data storage (in a real app, use a server and database)
+        const storedUser = JSON.parse(localStorage.getItem('user'));
+
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (storedUser && storedUser.name === username && storedUser.password === password) {
+                alert("Login successful!");
+                // Redirect to main menu or dashboard page
+                window.location.href = "mainmenu.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
