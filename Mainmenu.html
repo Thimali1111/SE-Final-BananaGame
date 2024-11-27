@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-menu-box">
+        <!-- Image background with buttons overlayed -->
+        <div class="menu-image">
+            <h2>Main Menu</h2>
+            <button onclick="goToProfile()">Profile</button>
+            <button onclick="goToHowToPlay()">How to Play</button>
+            <button onclick="goToSettings()">Settings</button>
+            <button onclick="startGame()">Play</button>
+        </div>
+    </div>
+
+    <script>
+        function goToProfile() {
+            window.location.href = "profile.html";
+        }
+        function goToHowToPlay() {
+            window.location.href = "howtoplay.html";
+        }
+        function goToSettings() {
+            window.location.href = "settings.html";
+        }
+        function startGame() {
+            window.location.href = "play.html";
+        }
+    </script>
+</body>
+</html>
