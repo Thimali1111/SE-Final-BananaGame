@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Go Back Button -->
+    <button class="back-button" onclick="goBack()">Back</button>
+
+    <!-- Outer box for profile page -->
+    <div class="box2">
+        <div class="profile-container">
+            <!-- Title at the top -->
+            <h2>User Profile</h2>
+            
+            <!-- User's circular profile image -->
+            <div class="profile-image">
+                <img src="images/profile im.jpg" alt="User Image">
+            </div>
+
+            <!-- Profile details with transparent boxes -->
+            <div class="profile-details">
+                <div class="detail-box">
+                    <p><strong>User Name:</strong> [Your Username]</p>
+                </div>
+                <div class="detail-box">
+                    <p><strong>Play Time:</strong> [Your Play Time]</p>
+                </div>
+                <div class="detail-box">
+                    <p><strong>Winning Time:</strong> [Your Winning Time]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
